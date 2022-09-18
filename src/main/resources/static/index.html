@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>go-cart webpage</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="main">
+            <h2 class="page-title">Panel admina</h2>
+
+            <div class="form-container">
+                <form action="gocarts/add" method="POST" class="form">
+                    <label for="seatCount">Liczba siedzeń</label>
+                    <input type="number" name="seatCount"  id="seatCount" class="form__input">
+                    <label for="gocartColor">Kolor</label>
+                    <input type="text" name="gocartColor" id="gocartColor" class="form__input">
+                    <button class="form__btn" > Ok</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <form action="gocarts" method="GET" class="form">
+                    <button name="" class="form__btn" style="background-color:blue" > Pokaż wszystkie gokarty</button>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
